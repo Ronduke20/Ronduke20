@@ -1,0 +1,171 @@
+<!-- <div class=" bg-dark text-white text-center py-5"><h1>DINAMO STORE</h1></div> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #572364;">
+
+  <nav class="nav-item">
+    <!-- <a class="navbar-brand" href="#"> -->
+      <img src="assets/imapagina/iconodinamo.jpg" width="70" height="30" >
+    <!-- </a> -->
+  </nav>
+  <!-- <a class="navbar-brand " href="#">MENU DE PAGINA PRINCIPAL</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <ul class="navbar-nav mr-auto navbar-expand-lg">
+      <li class="nav-item active">
+        <a class="nav-link text-light text-center" [routerLink]="['/inicio']">INICIO <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item nav-lg">
+        <a class="nav-link text-light " [routerLink]="['/mujeres']">MUJERES</a>
+      </li>
+      <li class="nav-item nav-lg">
+        <a class="nav-link text-light" [routerLink]="['/hombres']">HOMBRES</a>
+      </li>
+      <li class="nav-item nav-lg">
+        <a class="nav-link text-light" [routerLink]="['/marcas']">MARCAS</a>
+      </li>
+      <li class="nav-item nav-lg">
+        <a class="nav-link text-light" [routerLink]="['/contactanos']">CONTACTANOS</a>
+      </li>
+      
+      <li class="navbar-nav nav-item avbar-expand-lg ">
+        <a class="nav-link text-light" [routerLink]="['/conocenos']">CONOCENOS</a>
+      </li>
+    </ul>
+    
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+      <button class="btn btn-lg btn-dark my-2 my-sm-0" type="submit" >Buscar Producto</button>
+    </form>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>  
+<br>
+<br>
+<!-- <div class="container">
+  
+  <button class="btn btn-lg btn-dark mb-1 "  (click)="activo='primero'">Mujeres</button>
+  <button class="btn btn-lg btn-dark mb-1" (click)="activo='segundo'">Hombres</button>
+  <button class="btn btn-lg btn-danger mb-1" (click)="activo='tercero'">Marcas</button>
+  <button class="btn btn-lg btn-primary mb-1" (click)="activo='cuarto'">TERMINOS Y CONDICIONES</button>
+  <button class="btn btn-lg btn-danger mb-1" (click)="activo='quinto'">Mision y Vision</button>
+  
+  <br>
+
+  <p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">
+    CALZADO DE DAMA DISPONIBLE EN BODEGA
+<br>
+<img src="assets/imapagina/zapato1.jpg"  width="200px" height="200px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+<img src="assets/imapagina/zapato2.jpg"  width="200px" height="204px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+<img src="assets/imapagina/zapato3.jpg"  width="200px" height="200px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+<br>
+<br>
+<br>
+<br>
+<img src="assets/imapagina/zapato4.jpg"  width="200px" height="200px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+</p>
+  <p class="text-info d-none" [ngClass]="{'d-block':activo=='segundo'}">
+    CALZADO DE HOMBRE DISPONIBLE EN BODEGA
+<br>
+<img src="assets/imapagina/zapato5.jpg"  width="200px" height="200px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a><img src="assets/imapagina/zapato6.jpg"  width="200px" height="204px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+<img src="assets/imapagina/zapato7.jpg"  width="200px" height="200px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+<img src="assets/imapagina/zapato8.jpg"  width="200px" height="200px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+  </p>
+
+  <p class="text-info d-none" [ngClass]="{'d-block':activo=='tercero'}">
+    CALZADO DISPONIBLE EN BODEGA
+    <br>
+    <img src="assets/imapagina/zapato1.jpg"  width="200px" height="200px">
+    <a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+    <img src="assets/imapagina/zapato2.jpg"  width="200px" height="204px">
+    <a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+    <img src="assets/imapagina/zapato3.jpg"  width="200px" height="200px">
+    <a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+    <img src="assets/imapagina/zapato8.jpg"  width="200px" height="200px">
+<a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="assets/imapagina/zapato4.jpg"  width="200px" height="200px">
+    <a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+    <img src="assets/imapagina/zapato5.jpg"  width="200px" height="200px">
+    <a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a><img src="assets/imapagina/zapato6.jpg"  width="200px" height="204px">
+    <a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>
+    <img src="assets/imapagina/zapato7.jpg"  width="200px" height="200px">
+    <a href="https://forms.gle/tzJs6isKV5NVS7b39" target="_blank" onClick="window.open(this.href, this.target, 'width=700,height=350'); return false;"><input type="button" value="COMPRAR"></a>  
+  </p>
+
+  <p class="text-dark d-none" [ngClass]="{'d-block':activo=='cuarto'}">
+<br>
+TÉRMINOS, CONDICIONES Y POLÍTICA DE PRIVACIDAD
+<br>
+Las siguientes Condiciones Generales, Condiciones de venta y Política de tratamiento de la información regulan el uso del sitio www.DINAMOSTORE.net (en adelante "sitio web"), del que DINAMO S.A.S (de ahora en adelante “DINAMO STORE”) con NIT 000000000-0 y domicilio en la Calle 00 # 00-00 en Cucuta - Antioquia, es titular.
+
+A través de www.DinamosStore.net, Dinamo Store entrega información acerca de sus productos y ofrece la posibilidad de comprarlos. Las personas que quieran realizar compras deben añadir algunos datos para de esta forma adquirir la condición de “Cliente”. En este sentido, los Clientes aceptan los términos y condiciones recogidos en este documento, en la medida que ello les pueda ser de aplicación.
+
+
+CONTACTO: Para cualquier tipo de duda, consulta o sugerencia, los Usuarios pueden llamar a DINAMO STORE al 01 8000 00 00 00 o escribir al +57 313 679 2213 de Lunes a Sábado de 8:00 a.m. a 7:00 p.m. y Domingos de 9:00 a.m. a 5:00 p.m.
+<br> 
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ <br>
+ DISPONIBILIDAD DE CALZADO
+ <br>
+DINAMO STORE informa al Cliente que las unidades disponibles en el sitio web corresponden a las existencias en la bodega. En ningún caso DINAMO STORE pondrá a la venta de forma intencionada más unidades de las que disponga.
+
+DINAMOS STORE, en casos difícilmente controlables cómo errores humanos o incidencias en los sistemas informáticos, en donde la cantidad en inventario disponible difiera del pedido realizado, DINAMO STORE informará al Cliente vía email de la anulación total o parcial de su pedido, de manera que pueda seleccionar nuevos ítems para su pedido o si el Cliente solicita devolución de dinero, esta se realizará de acuerdo con lo estipulado en “DEVOLUCIONES”
+<br>
+<br> 
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ <br>
+PAGOS
+<br>
+El Cliente se compromete a pagar en el momento que realiza el pedido, la ropa más los gastos de envío. Estos valores serán mostrados previamente al Cliente antes de finalizar la compra. Los pagos se realizan a través de consignaciones o en pago contraentrega segun como desee el cliente.
+
+Si la transacción es rechazada, el Cliente podrá comunicarse directamente con su entidad bancaria para verificar la causa del rechazo. Si el pago es exitoso, el Cliente mostrara su ticket de pago a nuestras lineas de watsapp 3136792213 o 3203799469 luego recibirá un correo electrónico, al e-mail registrado en el formulario de compra. Todas las transacciones estarán sujetas a la verificación del ingreso efectivo en la cuenta bancaria de DINAMOS STORE y a verificaciones adicionales.
+<br> 
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ <br>
+</p>
+
+<p class="text-dark d-none" [ngClass]="{'d-block':activo=='quinto'}">
+
+<br>
+MISION 
+<br>
+Brindar un calzado de calidad a todo nuestros clientes , con el mejor precio del mercado. Logrando asi una sensacion de 
+satisfaccion en todos. Para llegar asi a brindarle el mejor servicio con los mejores productos de calzado 
+deportivo , casual, semideportivo , elegante.
+<br> 
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ <br>
+<br>
+
+VISION 
+<br>
+
+Proyectarnos a la exportacion y propia creacion de nuestros propios productos, pudiendo dar asi varios empleos a personas en nuestras futuras bodegas de creaciones de calzado . 
+y ayudando a disminuir esa cifra de desempleo en nuestro pais a la vez que vamos progresando y creciendo . 
+Ademas proyectarnos en otros aspectos de las ventas en un futuro. Como las ventas de otro implementos de vestir.
+<br> 
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ <br>
+</p>
+
+</div> -->
